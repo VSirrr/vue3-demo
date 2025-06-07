@@ -27,7 +27,7 @@ watchEffect(() => {
 
 <template>
   <main>
-    <CounterButton />
+    <!-- <CounterButton />
     <TestComp class="test">test</TestComp>
     <ReactiveComp />
     <PropsComp :list="list" />
@@ -38,7 +38,7 @@ watchEffect(() => {
       <br />
       <ModelValueComp2 v-model:first-name="firstName" v-model:last-name="lastName" />
     </div>
-    <ImageScale />
+    <ImageScale /> -->
     <!-- <ImageScale2 /> -->
   </main>
 </template>
