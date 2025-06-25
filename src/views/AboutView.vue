@@ -9,7 +9,10 @@
 <script>
 import { ref } from 'vue'
 import CounterButton from '@/components/CounterButton.vue'
-
+// window.onbeforeunload = function (e) {
+//   e.preventDefault()
+//   e.returnValue = ''
+// }
 export default {
   components: {
     CounterButton
@@ -25,6 +28,10 @@ export default {
       count,
       increment
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    console.log('beforeRouteLeave', to, from)
+    next(false)
   }
 }
 </script>

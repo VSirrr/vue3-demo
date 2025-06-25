@@ -27,6 +27,7 @@ watchEffect(() => {
 
 <template>
   <main>
+    <router-link to="/about">About</router-link>
     <!-- <CounterButton />
     <TestComp class="test">test</TestComp>
     <ReactiveComp />
